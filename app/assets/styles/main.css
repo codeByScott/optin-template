@@ -471,7 +471,7 @@ body {
   background-repeat: repeat repeat;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 770px) {
 
   body {
     background-attachment: fixed;
@@ -499,7 +499,7 @@ button, input, optgroup, select, textarea {
   margin-right: auto;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 770px) {
 
   .container {
     width: 550px;
@@ -547,7 +547,7 @@ button, input, optgroup, select, textarea {
   width: auto;
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 770px) {
 
   .main {
     padding-left: 60px;
