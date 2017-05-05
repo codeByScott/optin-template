@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+div {
+  display: block;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.43;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(../images/elysium-wellness-bg.jpg);
+  background-color: rgb(255, 255, 255);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position-y: -3px;
+  background-repeat: repeat repeat;
+
+  @mixin atLarge {
+    background-attachment: fixed;
+    overflow: initial;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+}
