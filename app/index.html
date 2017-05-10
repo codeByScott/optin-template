@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
+
+  <!-- Background Video (if applicable)-->
+  <video playsinline autoplay muted loop id="bgvid">
+    <source src="assets/videos/"> <!-- Add the video source(s) -->
+  </video>
+
   <div class="container">
     <div class="header">
       <div class="header__logo" data-delay="500" data-animate="fade">
@@ -28,31 +34,36 @@
           <br>
         </div>
       </div>
-      <div class="input-wrapper">
-        <input placeholder="Your Name" name="name"
-               class="input-wrapper__input input-wrapper__input--name" type="text"
-               aria-disabled="false">
-      </div>
-      <div class="input-wrapper">
-        <input placeholder="Your Email" name="email"
-               class="input-wrapper__input input-wrapper__input--email" type="email"
-               aria-disabled="false">
-      </div>
-      <div class="input-wrapper">
-        <input placeholder="Your Phone #" name="phone"
-               class="input-wrapper__input input-wrapper__input--phone" type="text"
-               aria-disabled="false">
-      </div>
-      <div class="input-wrapper">
-        <a href="#" class="button">
-          <span class="button__main">Get Your Free 15 Minute Session Now</span>
-          <span class="button__sub">(Limit first 10 Appointments)</span>
-        </a>
-      </div>
+      <form action="" method="">
+        <div class="input-wrapper">
+          <input placeholder="Your Name" name="name"
+                 class="input-wrapper__input input-wrapper__validation input-wrapper__input--name" type="text"
+                 aria-disabled="false" required>
+        </div>
+        <div class="input-wrapper">
+          <input placeholder="Your Email" name="email"
+                 class="input-wrapper__input input-wrapper__validation input-wrapper__input--email" type="email"
+                 aria-disabled="false" required>
+        </div>
+        <div class="input-wrapper">
+          <input placeholder="Your Phone #" name="phone"
+                 class="input-wrapper__input input-wrapper__validation input-wrapper__input--phone" type="tel"
+                 aria-disabled="false" required>
+        </div>
+        <div class="input-wrapper">
+          <button class="button">
+            <!-- <a href="#" class="button"> -->
+              <span class="button__main">Get Your Free 15 Minute Session Now</span>
+              <span class="button__sub">(Limit first 10 Appointments)</span>
+            <!-- </a> -->
+          </button>
+        </div>
+      </form>
+
     </div>
     <div class="copyright">
       <b>Copyright 2017 - Elysium Wellness</b><br>
-      <a href="https://www.google.com/" id="link-5373-397" class target="_parent">Privacy Policy</a>
+      <a href="https://www.google.com/" id="link-5373-397" target="_parent">Privacy Policy</a>
     </div>
   </div>
 </body>

@@ -607,6 +607,27 @@ button, input, optgroup, select, textarea {
   background-image: url(../images/phone.png);
 }
 
+.input-wrapper__validation:invalid:focus {
+  border-color: #B91517;
+  border-size: 5px;
+  border-color: rgb(185, 21, 23);
+  border-width: 3px;
+}
+
+.input-wrapper__validation:valid {
+  border-color: rgb(74, 137, 32);
+  border-width: 3px;
+}
+
+.input-wrapper__validation:focus {
+  border-color: #42B0E2;
+  border: 1px solid;
+}
+
+.input-wrapper__validation:hover {
+  border-color: #42B0E2
+}
+
 .button {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -661,4 +682,26 @@ button, input, optgroup, select, textarea {
   text-decoration: none;
   background: 0 0;
   color: rgba(255, 255, 255, 0.62);
+}
+
+video#bgvid {
+
+  display: none;
+}
+
+@media (min-width: 770px) {
+
+  video#bgvid {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
